@@ -4,47 +4,129 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Welcome Screen — QAH KIOSK</title>
+
+
+  <style>
+     * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: Helvetica, sans-serif;
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+    }
+    .page {
+      padding: 1rem;
+    }
+    .venue-label {
+      font-size: 2.9rem;
+      width: 100%;
+      border: 1px solid grey;
+      text-align: center;
+    }
+    .kiosk-label {
+      font-size: 2rem;
+      width: 100%;
+      border: 1px solid red;
+      text-align: center;
+      text-transform: uppercase;
+      padding: 0.35em 0;
+      color: #333;
+    }
+    .kiosk-uiprompt {
+
+    }
+    .snapbottom {
+      width: 100%;
+      border: 1px solid red;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+    .row-funfacts {
+      padding: 1rem;
+      font-size: 1.5em;
+    }
+    .row-btns {
+      border: 1px solid green;
+      display: flex;
+      justify-content: stretch;
+    }
+    .btn-i {
+      border: 1px solid purple;
+      flex-grow: 0;
+      flex-shrink: 0;
+      flex-basis: 4em;
+      height: 4em;
+    }
+    .events-snapshot {
+      font-size: 1.2rem;
+      flex-grow: 1;
+      padding: 0 1em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
 </head>
 <body>
   
-  <!-- Background illustration ideas -->
-  <!-- A color-palette-themed illustration of the front or back of the QAH 
-  with a tiny animation. Maybe an element of the illustration, or the lighting could be 
-  animated. Maybe the sun flares could have a small animation and the shadows and lighting 
-  could be in tune with time of day? IDEAS... -->
+  <div class="page">
+    <!-- Background illustration ideas -->
+    <!-- A color-palette-themed illustration of the front or back of the QAH 
+    with a tiny animation. Maybe an element of the illustration, or the lighting could be 
+    animated. Maybe the sun flares could have a small animation and the shadows and lighting 
+    could be in tune with time of day? IDEAS... -->
+
+    <header>
+      <h1 class="venue-label">Queens Assembly Hall of Jehovah's Witnesses</h1>
+      <h2 class="kiosk-label">Information Kiosk</h2>
+      <h3 class="kiosk-uiprompt">Tap to continue / tap to begin / tap for information [?]</h3>
+    </header>
 
     
-  <h1>Welcome to the Queens Assembly Hall</h1>
-  <h2>Information Kiosk</h2>
-  <h3>Tap for information</h3>
-
-
-  <!-- Rotating fun facts -->
-
-  <div class="event-information">
-    <div class="current-event">
-      <span class="label">Current event:</span>
-      <span class="label">"Always Rejoice"! Regional Convention 2020</span>
-    </div>
-
-    <div class="upcoming-event">
-      <span class="label">Upcoming event:</span>
-      <span class="label">7/21/2020 — "Always Rejoice"! Regional Convention in English</span>
-    </div>
-
-
-    <!-- If event mode, tune help features to specific event: ask attendant, etc -->
-    <div class="Need help?">
-      <button>Need Help?</button>
-    </div>
-
-    <!-- Emergency -->
-    <!-- Where are the bathrooms -->
-    <!-- Donation Information -->
-    <!-- Venue Information/Features >> Baptism Pool, -->
     
+      <!-- Venue Information/Features >> Baptism Pool, -->
+      
+      
+    </div>
+
+
+
+    <div class="snapbottom">
+      <!-- Rotating fun facts -->
+      <div class="row-funfacts">
+        <!-- Light bulb / or other fun fact icon -->
+        <span class="funfact__label">[i] Did you know?</span>
+        <span class="funfact__bit">The Queens Assembly Hall video wall installed in 2018[?] contains almost half a million LED
+          lights and weighs over 1000 lbs!</span>
+      </div>
+
+
+      <!-- Buttons & Event Info -->
+      <div class="row-btns">
+        <!-- Emergency -->
+        <!-- If event mode, tune help features to specific event: ask attendant, etc -->
+        <!-- Donation Information -->
+        <div class="btn-i">[i] Help icon</div>
+
+        <!-- Event information: upcoming events / current event? -->
+        <div class="events-snapshot">
+          <div class="upcoming-event">
+            <span class="label">Upcoming event:</span>
+            <span class="event-title">7/21/2020 — "Always Rejoice"! Regional Convention in English</span>
+          </div>
+        </div>
+
+         <!-- Where are the bathrooms -->
+        <div class="btn-i">[i] Map icon</div> 
+      </div>
+    </div>
 
   </div>
-
 </body>
 </html>
