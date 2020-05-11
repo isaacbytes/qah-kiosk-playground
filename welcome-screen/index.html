@@ -37,7 +37,13 @@
       color: #333;
     }
     .kiosk-uiprompt {
-
+      border: 1px solid purple;
+      width: 100%;
+      text-align: center;
+      position: absolute;
+      bottom: 270px;
+      left: 0;
+      font-size: 1.4rem;
     }
     .snapbottom {
       width: 100%;
@@ -74,6 +80,16 @@
       align-items: center;
       justify-content: center;
     }
+
+    .illustration-temp {
+      width: 500px;
+      height: auto;
+    }
+    .illustration-tempcontainer {
+      margin-top: 7em;
+      overflow: hidden;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
@@ -87,16 +103,16 @@
 
     <header>
       <h1 class="venue-label">Queens Assembly Hall of Jehovah's Witnesses</h1>
-      <h2 class="kiosk-label">Information Kiosk</h2>
-      <h3 class="kiosk-uiprompt">Tap to continue / tap to begin / tap for information [?]</h3>
+      <h2 class="kiosk-label">Information Kiosk</h2>      
     </header>
 
     
     
     <!-- temporary container for illustration (css bg eventually[?]) -->
     <div class="illustration-tempcontainer">
-      
+      <img src="../img/illust-1.jpg" alt="Three quarters view of Queens Assembly Hall`" class="illustration-temp">
     </div>
+    <h3 class="kiosk-uiprompt">Tap to continue / tap to begin / tap for information [?] [anim-pulse]</h3>
     
       
       
